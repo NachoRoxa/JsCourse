@@ -299,3 +299,56 @@ HINT: you will need the && operator to take the decision.*/
 //         console.log('There is a Draw!!');
 //         break;
 // }
+
+/*Functions */
+
+// function calculateAge(birthYear) {
+
+//     return 2019 - birthYear;
+// }
+
+// var ageJohn = calculateAge(1991);
+// var ageMike = calculateAge(1923);
+// var ageJane = calculateAge(1234);
+// console.log(ageJohn, ageMike, ageJane);
+
+// function yearsUntilRetirement(year, firstName) {
+//     var age = calculateAge(year);
+//     var retirement = 65 - age;
+//     if (retirement > 0) {
+//         console.log(firstName + ' retires in ' 
+//         + retirement + ' years.');
+//     } else {
+//         console.log(firstName + ' is already retired.');
+//     }
+// }
+
+// yearsUntilRetirement(1991, 'John');
+// yearsUntilRetirement(1948, 'Mike');
+// yearsUntilRetirement(1969, 'Jane');
+
+/*Function Statements and Expressions */
+
+//Function declaration
+// function whatDoYouDo(job,firstName){
+
+// }
+
+//Function Expression
+var whatDoYouDo = function (job, firstName) {
+    switch (job) {
+        case 'teacher':
+            return firstName + ' teaches kids how to code';
+        case 'driver':
+            return firstName + ' drives an uber car';
+        case 'designer':
+            return firstName + ' draws and make web page desing';
+        default:
+            return firstName + ' does something else';
+    }
+}
+
+console.log(whatDoYouDo('teacher', 'John'));
+console.log(whatDoYouDo('designer', 'Jane'));
+console.log(whatDoYouDo('retired', 'Mike'));
+
